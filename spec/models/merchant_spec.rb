@@ -7,8 +7,13 @@ RSpec.describe Merchant, type: :model do
     end
 
     it 'is valid when name is present' do
-      subject = FactoryBot.create(:merchant, merchant_name: 'Starbuck')
+      subject = FactoryBot.build(:merchant, merchant_name: 'Starbuck')
       expect(subject).to be_valid
+    end
+
+    it 'persists merchant in datastore' do
+      subject = FactoryBot.create(:merchant)
+      expect(Merchant.count).to eq(1)
     end
   end
 end
