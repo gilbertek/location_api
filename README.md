@@ -21,3 +21,12 @@ Make sure to have Ruby installed and Rails 6
 5. Run `bundle exec rails s`
 
 Fire up postman and test `http://localhost:3000/api/v1/users`
+
+*Here are the endpoints available*
+
+```
+POST api/v1/users/{user_id}/visits
+GET api/v1/users/{user_id}/visits?searchString=X
+GET api/v1/visits/{visit_id}
+GET api/v1/merchants
+```
