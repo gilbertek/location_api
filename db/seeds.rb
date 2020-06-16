@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# Seed Users
+5.times do
+  user = User.create({ first_name: Faker::Name.first_name, last_name: Faker::Name.last_name })
+end
+
+# Seed Merchant
+5.times do
+  merchant = Merchant.create({merchant_name: Faker::Company.name})
+end
+

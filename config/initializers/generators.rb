@@ -5,4 +5,5 @@ Rails.application.config.generators do |g|
   g.stylesheets false
   g.test_framework :rspec, view_specs: false, routing_specs: false
   g.template_engine nil
+  g.orm :active_record, primary_key_type: :uuid
 end
