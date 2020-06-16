@@ -30,3 +30,6 @@ GET api/v1/users/{user_id}/visits?searchString=X
 GET api/v1/visits/{visit_id}
 GET api/v1/merchants
 ```
+*Public url*
+
+`https://frozen-meadow-54072.herokuapp.com/`
